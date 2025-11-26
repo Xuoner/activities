@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 import re
 import os
-import request
+import requests
 from PIL import Image
 
 
@@ -346,5 +346,6 @@ with st.expander("➕ Ajouter une nouvelle activité"):
             save_json(ACTIVITIES_FILE, activities)
             st.success("Activité créée 🎉")
             st.rerun()
+
 
 
