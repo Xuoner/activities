@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Escape Game",
+    "description": "Un escape game, c’est un jeu d’aventure grandeur nature où tu te retrouves enfermé dans une pièce avec ton équipe, et tu dois résoudre des énigmes pour t’en échapper avant la fin du temps imparti. \n Chaque salle a un thème différent — ça peut être une enquête policière, un vaisseau spatial, un manoir hanté ou même une prison. Tout est fait pour te plonger dans l’histoire : les décors, les sons, les objets, parfois même les acteurs.",
+    "link": "https://www.escapegame.fr/paris/deepinside/magicien-paris/",
+    "date": "Décembre",
+    "max_participants": null,
+    "current_participants": 8,
+    "status": "Ouvert",
+    "cost": "33€/personne"
+  },
+  {
+    "name": "Escape Game Horreur",
+    "description": "La même qu'au dessus mais une version spéciale horreur où on cherche vraiment à être dans un cadre qui fait peur.",
+    "link": "https://www.escapegame.fr/paris/deepinside/palais-horreur/",
+    "date": "Décembre",
+    "max_participants": null,
+    "current_participants": 6,
+    "status": "Ouvert",
+    "cost": "33€/personne"
+  },
+  {
+    "name": "Les 2 en même temps",
+    "description": "La salle d'escape game des deux propositions précédentes propose une 'Full Experience' qui permet d'enchaîner ces 2 escapes games pour 2h30 d'intense expérience. \n Lisez les reviews mise en lien pour les 2 au dessus et faites vous un avis, mais ça a l'air vraiment stylé !!",
+    "link": "https://deepinsideparis.fr/full-experience/",
+    "date": "Décembre",
+    "max_participants": null,
+    "current_participants": 6,
+    "status": "Ouvert",
+    "cost": "66€/personne"
+  },
+      {
+    "name": "Billard",
+    "description": "On débrief les nouveaux locaux autour de quelques tables de billard.",
+    "link": null,
+    "date": "04/12/2025",
+    "max_participants": null,
+    "current_participants": 0,
+    "status": "Ouvert",
+    "cost": "Pas cher"
+  },
+    {
+    "name": "Killer",
+    "description": "Un petit jeu marrant à faire, qui se fait sur genre une semaine. Chacun reçoit le nom d'une autre personne, et doit 'l'éliminer' en lui faisant faire une action précise (un truc que la personne ne ferait jamais d'elle même, genre faire s'allonger la personne sur le canap de la salle repos (RIP)). Si on réussit, on a 'tué' la personne, et on récupère sa cible. Le but est d'être le dernier en vie !",
+    "link": null,
+    "date": "Décembre",
+    "max_participants": null,
+    "current_participants": 0,
+    "status": "Ouvert",
+    "cost": "Gratuit"
+  },
+
+  {
+    "name": "Soirée Quizz",
+    "description": "L'idée serait d'organiser une soirée quizz, un peu comme un jeu télé, avec évidemment des questions, mais mélangeant des choix de thèmes parmi un peu culture G mais aussi des reférences communes/private joke/happening inter RSM, avec comme twist que l'on a des bonus/malus a dépenser, que ce soit pour genre imposer des thèmes aux équipes adverses, interdire certaines personnes de répondre à certaines questions, voler des personnes à d'autres équipes... Et aussi plein d'autres sortes de challenges de mon imagination. \nProbablement un soir au bureau, j'attends de voir combien de gens sont interréssés !!",
+    "link": null,
+    "date": "Janvier",
+    "max_participants": null,
+    "current_participants": 9,
+    "status": "Ouvert",
+    "cost": "Gratuit (sorry Zainab)"
+  },
+  {
+    "name": "Aprèm ou Soirée Jeux de Société",
+    "description": "Je pense que le titre est explicite, on se réunit, on fait des jeux, on rigole, on se moque de Bastien... Du fun !",
+    "link": null,
+    "date": "29/11/2025",
+    "max_participants": null,
+    "current_participants": 7,
+    "status": "Ouvert",
+    "cost": "Gratuit"
+  },
+  {
+    "name": "Time Escape",
+    "description": "Réunissez votre team et préparez-vous à une aventure hors norme ! Plus de 37 défis de folie vous attendent, combinant force, cerveau et stratégie pour tester vos limites. Traversez un maximum d’Époks (thèmes), ces univers déjantés où chaque parcours enchaîne de 1 à 3 salles de pure adrénaline. \n Le challenge ? Passez la première salle pour accéder à la suivante, et ainsi de suite… Mais si vous échouez, c’est retour direct à la case départ, et les solutions auront changé ou transportez-vous dans une autre Epok. Le temps presse, avec seulement 3 minutes par salle – alors préparez-vous à sprinter contre la montre ! \n Scorez comme un(e) pro : plus vite vous terminez une salle, plus vous raflez de points ! Faites-le en 2 minutes ? Bam, 200 points ! En 1 minute ? Jackpot, 400 points ! Et les vrais experts explosent les compteurs avec plus de 1600 points. Prêts à devenir des accros ? \nPlongez dans l’action : décors de cinéma 3D, ambiance sonore de dingue… l’immersion est totale ! Chaque défi est taillé sur mesure, original et fait pour vous scotcher.",
+    "link": "https://www.timetripper.fr/paris-75/",
+    "date": "Février",
+    "max_participants": null,
+    "current_participants": 8,
+    "status": "Ouvert",
+    "cost": "39€/personne"
+  },
+  {
+    "name": "Laser Game",
+    "description": "On se tire dessus mais c'est des lasers donc ça fait pas mal",
+    "link": null,
+    "date": "Janvier",
+    "max_participants": 1,
+    "current_participants": 1,
+    "status": "Ouvert",
+    "cost": "À vérifier"
+  },
+  {
+    "name": "Date avec Paul",
+    "description": "Ptit quality time à 2, au choix on peut aller diner, dej, prendre un verre, se balader...  On discute un peu",
+    "link": null,
+    "date": "Quand vous voulez :)",
+    "max_participants": 0,
+    "current_participants": 0,
+    "status": "Ouvert",
+    "cost": "Gratuit"
+  },
+  {
+    "name": "Karting",
+    "description": "Vroum Vroum Vroum",
+    "link": null,
+    "date": "Mars",
+    "max_participants": null,
+    "current_participants": 0,
+    "status": "Ouvert",
+    "cost": "20 à 30€/personne"
+  },
+  {
+    "name": "Escalade",
+    "description": "On grimpe sur des murs c'est fun...",
+    "link": null,
+    "date": "Décembre",
+    "max_participants": null,
+    "current_participants": 0,
+    "status": "Ouvert",
+    "cost": "~15€"
+  }
+]
