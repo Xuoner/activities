@@ -266,14 +266,14 @@ def show_activity(activity, key_prefix):
                     st.warning("Déjà inscrit.")
                 else:
                     participants.append({"name": user_name, "activity": activity["name"]})
-                    save_json(PARTICIPANTS_FILE, participants)
+                    save_json(API_URL_PARTICIPANTS, participants)
 
                     # Mark full
                     if max_p and len([p for p in participants if p["activity"] == activity["name"]]) >= max_p:
                         for a in activities:
                             if a["name"] == activity["name"]:
                                 a["status"] = "Complet"
-                        save_json(ACTIVITIES_FILE, activities)
+                        save_json(API_URL_ACTIVITIES, activities)
 
                     st.success("Inscription confirmée 🎉")
                     st.rerun()
@@ -344,9 +344,10 @@ with st.expander("➕ Ajouter une nouvelle activité"):
                 "status": status,
                 "max_participants": max_participants if max_participants > 0 else None
             })
-            save_json(ACTIVITIES_FILE, activities)
+            save_json(API_URL_ACTIVITIES, activities)
             st.success("Activité créée 🎉")
             st.rerun()
+
 
 
 
