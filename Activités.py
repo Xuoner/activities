@@ -88,7 +88,7 @@ def load_json_github(api_url):
         return json.loads(decoded)
     return []
 
-def save_json_github(api_url, data, message="Update file"):
+def save_json(api_url, data, message="Update file"):
     # get current sha
     resp = requests.get(api_url, headers=HEADERS)
     sha = resp.json()["sha"] if resp.status_code == 200 else None
@@ -347,6 +347,7 @@ with st.expander("➕ Ajouter une nouvelle activité"):
             save_json(ACTIVITIES_FILE, activities)
             st.success("Activité créée 🎉")
             st.rerun()
+
 
 
 
