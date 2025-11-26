@@ -14,7 +14,7 @@ from PIL import Image
 # -----------------------
 GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
 
-API_URL_ACTIVITIES = f"https://api.github.com/repos/Xuoner/activities/contents/Activités.json"
+API_URL_ACTIVITIES = f"https://api.github.com/repos/Xuoner/activities/contents/Activities.json"
 API_URL_PARTICIPANTS = f"https://api.github.com/repos/Xuoner/activities/contents/Participants.json"
 HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"}
 
@@ -347,6 +347,7 @@ with st.expander("➕ Ajouter une nouvelle activité"):
             save_json(ACTIVITIES_FILE, activities)
             st.success("Activité créée 🎉")
             st.rerun()
+
 
 
 
