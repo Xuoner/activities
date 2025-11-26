@@ -390,5 +390,9 @@
   {
     "name": "David",
     "activity": "Randonnée"
+  },
+  {
+    "name": "Paul",
+    "activity": "Billard"
   }
 ]
