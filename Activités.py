@@ -98,7 +98,6 @@ def save_json(api_url, data, message="Update file"):
         "message": message,
         "content": content_base64,
         "sha": sha,
-        "branch": BRANCH
     }
     put_resp = requests.put(api_url, headers=HEADERS, json=payload)
     if put_resp.status_code in [200, 201]:
@@ -347,6 +346,7 @@ with st.expander("➕ Ajouter une nouvelle activité"):
             save_json(API_URL_ACTIVITIES, activities)
             st.success("Activité créée 🎉")
             st.rerun()
+
 
 
 
