@@ -10,6 +10,12 @@ from PIL import Image
 # -----------------------
 # Config
 # -----------------------
+GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
+
+API_URL_ACTIVITIES = f"https://api.github.com/repos/Xuoner/activities/contents/Activités.json"
+API_URL_PARTICIPANTS = f"https://api.github.com/repos/Xuoner/activities/contents/Participants.json"
+HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"}
+
 ACTIVITIES_FILE = "activities.json"
 PARTICIPANTS_FILE = "participants.json"
 ADMIN_PASSWORD = "admin123"
@@ -54,18 +60,50 @@ st.markdown("""
 # -----------------------
 # Helpers
 # -----------------------
-def load_json(path, default):
-    if not os.path.exists(path):
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(default, f, indent=2, ensure_ascii=False)
-        return default
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+# def load_json(path, default):
+#     if not os.path.exists(path):
+#         with open(path, "w", encoding="utf-8") as f:
+#             json.dump(default, f, indent=2, ensure_ascii=False)
+#         return default
+#     with open(path, "r", encoding="utf-8") as f:
+#         return json.load(f)
+def load_json_github(api_url):
+    resp = requests.get(api_url, headers=HEADERS)
+    if resp.status_code == 200:
+        content = resp.json()["content"]
+        decoded = base64.b64decode(content).decode("utf-8")
+        return json.loads(decoded)
+    return []
 
+# def save_json(path, data):
+#     with open(path, "w", encoding="utf-8") as f:
+#         json.dump(data, f, indent=2, ensure_ascii=False)
+def load_json_github(api_url):
+    resp = requests.get(api_url, headers=HEADERS)
+    if resp.status_code == 200:
+        content = resp.json()["content"]
+        decoded = base64.b64decode(content).decode("utf-8")
+        return json.loads(decoded)
+    return []
 
-def save_json(path, data):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+def save_json_github(api_url, data, message="Update file"):
+    # get current sha
+    resp = requests.get(api_url, headers=HEADERS)
+    sha = resp.json()["sha"] if resp.status_code == 200 else None
+
+    content_base64 = base64.b64encode(json.dumps(data, indent=2, ensure_ascii=False).encode("utf-8")).decode("utf-8")
+    payload = {
+        "message": message,
+        "content": content_base64,
+        "sha": sha,
+        "branch": BRANCH
+    }
+    put_resp = requests.put(api_url, headers=HEADERS, json=payload)
+    if put_resp.status_code in [200, 201]:
+        st.success("✅ Fichier mis à jour sur GitHub")
+    else:
+        st.error(f"Erreur GitHub: {put_resp.status_code} {put_resp.text}")
+        
 def get_avatar_html(name):
     """
     If an avatar exists for this participant, returns HTML to display it next to the name.
@@ -134,9 +172,10 @@ def parse_date(value):
 # -----------------------
 # Load Data
 # -----------------------
-activities = load_json(ACTIVITIES_FILE, [])
-participants = load_json(PARTICIPANTS_FILE, [])
-
+# activities = load_json(ACTIVITIES_FILE, [])
+# participants = load_json(PARTICIPANTS_FILE, [])
+activities = load_json_github(API_URL_ACTIVITIES)
+participants = load_json_github(API_URL_PARTICIPANTS)
 # -----------------------
 # Sidebar: identity + calendar
 # -----------------------
@@ -306,3 +345,4 @@ with st.expander("➕ Ajouter une nouvelle activité"):
             save_json(ACTIVITIES_FILE, activities)
             st.success("Activité créée 🎉")
             st.rerun()
+
