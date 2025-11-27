@@ -85,7 +85,7 @@
     "description": "On se tire dessus mais c'est des lasers donc ça fait pas mal",
     "link": null,
     "date": "Janvier",
-    "max_participants": 1,
+    "max_participants": null,
     "current_participants": 1,
     "status": "Ouvert",
     "cost": "À vérifier"
@@ -95,7 +95,7 @@
     "description": "Ptit quality time à 2, au choix on peut aller diner, dej, prendre un verre, se balader...  On discute un peu",
     "link": null,
     "date": "Quand vous voulez :)",
-    "max_participants": 0,
+    "max_participants": null,
     "current_participants": 0,
     "status": "Ouvert",
     "cost": "Gratuit"
@@ -120,4 +120,5 @@
     "status": "Ouvert",
     "cost": "~15€"
   }
+
 ]
