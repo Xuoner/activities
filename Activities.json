@@ -61,16 +61,6 @@
     "cost": "Gratuit (sorry Zainab)"
   },
   {
-    "name": "Aprèm ou Soirée Jeux de Société",
-    "description": "Je pense que le titre est explicite, on se réunit, on fait des jeux, on rigole, on se moque de Bastien... Du fun !",
-    "link": null,
-    "date": "29/11/2025",
-    "max_participants": null,
-    "current_participants": 7,
-    "status": "Ouvert",
-    "cost": "Gratuit"
-  },
-  {
     "name": "Time Escape",
     "description": "Réunissez votre team et préparez-vous à une aventure hors norme ! Plus de 37 défis de folie vous attendent, combinant force, cerveau et stratégie pour tester vos limites. Traversez un maximum d’Époks (thèmes), ces univers déjantés où chaque parcours enchaîne de 1 à 3 salles de pure adrénaline. \n Le challenge ? Passez la première salle pour accéder à la suivante, et ainsi de suite… Mais si vous échouez, c’est retour direct à la case départ, et les solutions auront changé ou transportez-vous dans une autre Epok. Le temps presse, avec seulement 3 minutes par salle – alors préparez-vous à sprinter contre la montre ! \n Scorez comme un(e) pro : plus vite vous terminez une salle, plus vous raflez de points ! Faites-le en 2 minutes ? Bam, 200 points ! En 1 minute ? Jackpot, 400 points ! Et les vrais experts explosent les compteurs avec plus de 1600 points. Prêts à devenir des accros ? \nPlongez dans l’action : décors de cinéma 3D, ambiance sonore de dingue… l’immersion est totale ! Chaque défi est taillé sur mesure, original et fait pour vous scotcher.",
     "link": "https://www.timetripper.fr/paris-75/",
@@ -122,3 +112,4 @@
   }
 
 ]
+
