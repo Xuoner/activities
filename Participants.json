@@ -414,5 +414,9 @@
   {
     "name": "Guy",
     "activity": "Soirée Quizz"
+  },
+  {
+    "name": "Paul",
+    "activity": "Laser Game"
   }
 ]
